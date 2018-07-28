@@ -31,15 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
-                        int hour = hourOfDay;
                         String str;
 
-                        if (hour >= 2 && hour < 10) {
+                        if (hourOfDay >= 2 && hourOfDay < 10) {
                             str = "おはよう";
-                            Log.d("UI-PARTS", String.valueOf(hour) + "OKOKOKOKOKOKOKOK");
-                        }else if (hour >= 10 && hour < 18){
+                        }else if (hourOfDay >= 10 && hourOfDay < 18){
                             str = "こんにちは";
-                            Log.d("UI-PARTS", String.valueOf(hour) + "OKOKOKOKOKOKOKOK");
                         }else{
                             str = "こんばんは";
                         }
